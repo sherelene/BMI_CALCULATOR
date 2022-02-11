@@ -42,7 +42,7 @@ def metric(runs):
     statement = True
     for i in range(0, runs):
         print("\n---------------------TEST RUN{}--------------------\n".format(i + 1))
-        while statement == True:
+        while statement == True: #this is an infinate loop that i need to fix
             weight = float(input("Enter how much you weigh in kilograms: "))
             height = float(input("Enter your height in meters: "))
             statement = confirmNumbers(weight, height)
