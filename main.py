@@ -26,23 +26,23 @@ def bmiRange(percentage):
 
 
 def usa(runs):
-    statement = True
     for i in range(0, runs):
+        statement = True
         print("\n---------------------TEST RUN{}--------------------\n".format(i+1))
         while statement == True:
             weight = float(input("Enter how much you weigh in pounds: "))
             height = float(input("Enter your height in inches: "))
-            confirmNumbers(weight, height)
+            statement = confirmNumbers(weight, height)
         BMI = 703 * weight / (height ** 2)
         bmiRange(BMI)
 
 
 
 def metric(runs):
-    statement = True
     for i in range(0, runs):
+        statement = True
         print("\n---------------------TEST RUN{}--------------------\n".format(i + 1))
-        while statement == True: #this is an infinate loop that i need to fix
+        while statement == True:
             weight = float(input("Enter how much you weigh in kilograms: "))
             height = float(input("Enter your height in meters: "))
             statement = confirmNumbers(weight, height)
